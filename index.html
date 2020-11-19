@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!--Importação dos icones do font awesome-->
+    <title>Rafael Gomes - Portifolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="content-header">
+            <div class="logo-header">
+                <h2>Rafael Gomes</h2>
+            </div>
+            <div class="menu-header">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contatos</a>
+            </div>
+            <a href="#" id="header-bars" onclick="botaoDoMenu()"><i class="fas fa-bars"></i></a> <!--Icone barras para mobile-->
+        </div>
+    </header>
+    <div id="menu-response" class="menu-header-mobile">
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contatos</a>
+    </div>
+
+    <main class="banner">
+        <div class="content-banner aparecer">
+            <p>Portifolio</p>
+            <h1>Rafael Gomes</h1>
+            <p class="line-banner typing-animation">Desenvolvedor <span>Front-End</span></p>
+            <p>Tecnico em Redes de Computadores pela escola SENAI de Informatica e agora cursando Desenvolvimento de Sistemas pela mesma escola.</p>
+            <a href="#">Continuar</a>
+        </div>
+    </main>
+
+    <section class="about">
+        <div class="orange"></div>
+        <div class="black"></div>
+        <div class="eu-about">
+            <div class="box-about">
+                <div class="box1-about box">
+                    <h2>Rafael Gomes</h2>
+                    <p>Desenvolvedor Front-End</p>
+                </div>
+                <div class="box2-about box">
+                    <h2>Metodologia Scrum</h2>
+                    <ul>
+                        <li>Sprints</li>
+                        <li>Sprint Backlog</li>
+                        <li>Sprint Review</li>
+                        <li>Dailys Scrum</li>
+                        <li>P.O, Scrum Master</li>
+                    </ul>
+                </div>
+                <div class="box3-about box">
+                    <h2>Principais Tecnologias</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Git / Github</li>
+                    </ul>
+                </div>
+                <div class="box4-about box">
+                    <h2>Futuros Estudos</h2>
+                    <p>Desejo me aperfeiçoar cada vez mais na area de desenvolvimento Front-End, para isso estou estudando todo o RoadMap Front-end do site - roadmap.sh/frontend e assim conseguindo ficar cada vez mais preparado ao mercado de trabalho.</p>
+                </div>
+            </div>
+            <div class="foto-about">
+                <img src="img/eu.png" alt="Foto de Rafael Gomes">
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function botaoDoMenu() {
+      var navMobile = document.getElementById("menu-response");
+
+      if (navMobile.style.display === "block") {
+        navMobile.style.display = "none";
+      } else {
+        navMobile.style.display = "block";
+      }
+    }
+ </script>
+</html>

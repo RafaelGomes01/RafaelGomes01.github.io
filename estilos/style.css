@@ -1,0 +1,405 @@
+/* Importações de Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+/* Zerar padrões */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header - Header */
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    z-index: 100; */
+}
+
+.content-header{
+    color: white;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header h2{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.menu-header a{
+    color: white;
+    padding: 25px 20px;
+    transition: 0.2s;
+}
+
+.menu-header a:hover{
+    background-color: #F2803A;
+    height: 70px;
+}
+
+#header-bars{
+    display: none;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+}
+
+.menu-header-mobile a{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: black;
+    border: 1px solid #68381a;
+    display: block;
+}
+
+.menu-header-mobile a:hover{
+    background-color: #4717F6;
+}
+
+.menu-header-mobile{
+    display: none;
+}
+
+/* Banner - Main */
+.banner{
+    width: 100%;
+    height: 794px;
+    background-image: url(../img/background-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-banner{
+    color: white;
+    width: 80%;
+    margin-top: 10%;
+    
+}
+
+.content-banner p:nth-child(1){
+    font-size: 36px;
+    color: #cdcdcd;
+}
+
+.content-banner h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 90px;
+    font-weight: bolder;
+    margin: 10px 0px;
+    margin-top: 5px;
+}
+
+.line-banner{
+    font-size: 30px;
+    font-weight: lighter;
+    padding-right: 10px;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Special Elite', cursive;
+}
+
+.content-banner span{
+    color: #F2803A;
+    font-weight: bolder;
+}
+
+.content-banner p:nth-last-child(2){
+    width: 393px;
+    font-size: 24px;
+    margin: 15px 0px;
+    font-weight: lighter;
+    color: #cdcdcd;
+}
+
+.content-banner a{
+    color: white;
+    font-size: 30px;
+    padding: 10px 30px;
+    background-color: #F2803A;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
+    transition: 0.3s;
+}
+
+.content-banner a:hover{
+    background-color: #4717F6;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0));
+}
+
+/* About - Section */
+.about{
+    width: 100%;
+    height: 954px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange{
+    width: 80%;
+    height: 100%;
+    background-color: #F2803A;
+}
+
+.black{
+    width: 20%;
+    height: 100%;
+    background-color: #1C1C1C;
+}
+
+.eu-about{
+    width: 1296px;
+    height: 658px;
+    background-color: gray;
+    display: inline;
+    position: absolute;
+    display: flex;
+}
+
+.box-about{
+    width: 762px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto-about{
+    width: 534px;
+    height: 100%;
+}
+
+.box1-about{
+    width: 381px;
+    height: 329px;
+    background-color: #0E0B16;
+    color: white;
+}
+
+.box1-about h2{
+    font-size: 55px;
+    margin-left: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.box1-about p{
+    color: #CDCDCD;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    margin-left: 20px;
+}
+
+.box2-about{
+    width: 381px;
+    height: 329px;
+    background-color: #E7DFDD;
+}
+
+.box2-about h2{
+    font-size: 45px;
+    margin-left: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.box2-about li{
+    font-size: 23px;
+    margin-left: 45px;
+}
+
+.box2-about ul{
+    margin: 20px 0;
+}
+
+.box3-about{
+    width: 381px;
+    height: 329px;
+    background-color: #BA3B4B;
+}
+
+.box3-about h2{
+    font-size: 45px;
+    margin-left: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.box3-about li{
+    font-size: 23px;
+    margin-left: 45px;
+}
+
+.box3-about ul{
+    margin: 20px 0;
+}
+
+.box4-about{
+    width: 381px;
+    height: 329px;
+    background-color: #4717F6;
+    color: white;
+}
+
+.box4-about h2{
+    font-size: 45px;
+    margin-left: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.box4-about p{
+    width: 348px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+/* Resposividade com medias queries */
+
+/* Medium - Tablet and Landscape devices */
+@media only screen and (max-width: 992px){
+    #header-bars{
+        display: inline;
+    }
+
+    .fa-bars{
+        font-size: 35px;
+    }
+
+    .menu-header{
+        display: none;
+    }
+}
+
+/* Small - Phones*/
+@media only screen and (max-width: 768px){
+    /* Banner - Main */
+    .banner{
+        height: auto;
+    }
+
+    .content-banner{
+        margin: 18.6% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-banner p:nth-last-child(2){
+        width: auto;
+    }
+}
+
+/* Extra Small - Others Small Devices */
+@media only screen and (max-width: 576px){
+
+}
+
+@media only screen and (max-width: 376px){
+    /* Banner - Main */
+    .content-banner p:nth-child(1){
+        font-size: 24px;
+    }
+
+    .content-banner h1{
+        font-size: 72px;
+    }
+
+    .line-banner{
+        font-size: 24px;
+    }
+
+    .content-banner p:nth-last-child(2){
+        font-size: 18px;
+    }
+
+    .content-banner a{
+        font-size: 26px;
+        padding: 8px 20px;
+        top: 10px;
+    }
+}
+
+/* Animações css */
+
+/* Classes */
+.typing-animation{
+    animation: blinkCursor 500ms steps(30) infinite normal, typing 2.5s steps(30) 1s normal both;
+}
+
+.aparecer{
+    animation: aparecer 2s steps(30) normal;
+    transition: 0.2s;
+}
+
+/* Banner */
+@keyframes blinkCursor{
+    form{
+        border-right-color: rgba(242, 128, 58, 1);
+    }
+    to{
+        border-right-color: transparent
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 12.2em;
+    }
+}
+
+@keyframes delete{
+    from{
+        width: 11.1em;
+    }
+
+    to{
+        width: 0;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
